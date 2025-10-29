@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaswanth Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Semantic Elements -->
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <button class="burger-menu" aria-label="Toggle menu" aria-expanded="false" data-burger-toggle>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#hero" data-nav-link class="nav-link active">Hero</a></li>
+                    <li><a href="#about" data-nav-link class="nav-link">About</a></li>
+                    <li><a href="#skills" data-nav-link class="nav-link">Skills</a></li>
+                    <li><a href="#projects" data-nav-link class="nav-link">Projects</a></li>
+                    <li><a href="#timeline" data-nav-link class="nav-link">Timeline</a></li>
+                    <li><a href="#contact" data-nav-link class="nav-link">Contact</a></li>
+                    <li><a href="#faq" data-nav-link class="nav-link">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content with Semantic Structure -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="page-section active" data-page="hero">
+            <article class="hero-content">
+                <div class="hero-box">
+                    <div class="hero-text">
+                        <h1 class="fade-in">Bhaswanth Kumar Bonthala</h1>
+                        <h3 class="slide-up">Software Consultant | Web Developer</h3>
+                        <p class="fade-in-delay">I love building web apps and exploring new technologies. Welcome to my portfolio!</p>
+                        
+                    </div>
+                    <div class="hero-image">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./src/images/bbk.jpg">
+                            <source media="(min-width: 769px)" srcset="./src/images/bbk.jpg">
+                            <img src="./src/images/bbk.jpg" alt="Bhaswanth Kumar Bonthala's professional photo" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="page-section" data-page="about">
+            <article class="about-content">
+                <div class="about-box">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>I am currently working as a Software Consultant based in Bangalore, where I apply my technical expertise to 
+                            build scalable and efficient software solutions. My professional journey reflects a strong commitment to 
+                            continuous learning and a passion for solving real-world problems through technology.</p>
+                        <p>With hands-on experience in full-stack development, microservices architecture, 
+                            and cloud-native applications, I have developed a solid foundation in modern software 
+                            engineering practices. I enjoy exploring new tools and frameworks, and I’m always eager to contribute to 
+                            impactful projects that drive innovation.</p></div>
+                    <aside class="about-sidebar">
+                        <div class="contact-details">
+                            <h3>Contact Details</h3>
+                            <ul class="contacts-list" role="list">
+                                <li>
+                                    <strong>Email:</strong>
+                                    <a href="mailto:bhaswanth67@gmail.com">bhaswanth67@gmail.com</a>
+                                </li>
+                                <li>
+                                    <strong>Phone:</strong>
+                                    <a href="tel:+919988556362">+91 9988556362</a>
+                                </li>
+                                <li>
+                                    <strong>Birthday:</strong>
+                                    <time datetime="2004-06-03">June 03, 2004</time>
+                                </li>
+                                <li>
+                                    <strong>Location:</strong>
+                                    Rayachoty, Andhra Pradesh, India
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="social-links">
+                            <h3>Connect With Me</h3>
+                            <ul class="social-list" role="list">
+                                <li><a href="https://github.com/Bhaswanth67" target="_blank" rel="noopener" aria-label="GitHub"><span>GitHub</span></a></li>
+                                <li><a href="https://www.linkedin.com/in/bhaswanthkumar" target="_blank" rel="noopener" aria-label="LinkedIn"><span>LinkedIn</span></a></li>
+                                <li><a href="https://www.instagram.com/bhaswanth67/" target="_blank" rel="noopener" aria-label="Instagram"><span>Instagram</span></a></li>
+                                <li><a href="https://www.facebook.com/bhaswanth.sai/" target="_blank" rel="noopener" aria-label="Facebook"><span>Facebook</span></a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </article>
+        </section>
+
+        <!-- Skills Section with Dashboard Layout -->
+        <section id="skills" class="page-section" data-page="skills">
+            <article class="skills-content">
+                <div class="skills-dashboard">
+                    <div class="dashboard-header">
+                        <h2>My Skills Dashboard</h2>
+                        <p>Explore my technical proficiencies and language skills</p>
+                    </div>
+                    <div class="dashboard-grid">
+                        <!-- Programming Skills Card -->
+                        <div class="skill-card programming-card">
+                            <h3>Programming Languages</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-label">C</span>
+                                    <div class="progress-container">
+                                        <progress value="70" max="100"></progress>
+                                        <span class="skill-value">70%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-label">C++</span>
+                                    <div class="progress-container">
+                                        <progress value="50" max="100"></progress>
+                                        <span class="skill-value">50%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-label">Java</span>
+                                    <div class="progress-container">
+                                        <progress value="65" max="100"></progress>
+                                        <span class="skill-value">65%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-label">Python</span>
+                                    <div class="progress-container">
+                                        <progress value="70" max="100"></progress>
+                                        <span class="skill-value">70%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-label">HTML</span>
+                                    <div class="progress-container">
+                                        <progress value="90" max="100"></progress>
+                                        <span class="skill-value">90%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-label">SQL</span>
+                                    <div class="progress-container">
+                                        <progress value="75" max="100"></progress>
+                                        <span class="skill-value">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Languages Card -->
+                        <div class="skill-card languages-card">
+                            <h3>Spoken Languages</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-label">English</span>
+                                    <div class="progress-container">
+                                        <progress value="90" max="100"></progress>
+                                        <span class="skill-value">90%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-label">Hindi</span>
+                                    <div class="progress-container">
+                                        <progress value="90" max="100"></progress>
+                                        <span class="skill-value">90%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-label">Telugu</span>
+                                    <div class="progress-container">
+                                        <progress value="95" max="100"></progress>
+                                        <span class="skill-value">95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Projects Section with Grid and Hover -->
+        <section id="projects" class="page-section" data-page="projects">
+            <article class="projects-content">
+                <div class="projects-box">
+                    <h2>Projects Gallery</h2>
+                    <div class="projects-grid" role="grid">
+                        <article class="project-card" data-project="medibook">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="./src/images/medibook-mobile.webp">
+                                <img src="./src/images/medibook.png" alt="MediBook MERN Project" loading="lazy">
+                            </picture>
+                            <h3>MediBook</h3>
+                            <p>MERN doctor appointment booking platform.</p>
+                            
+                        </article>
+                        <article class="project-card" data-project="plant">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="./src/images/plant-mobile.webp">
+                                <img src="./src/images/plantdisease.png" alt="Plant Disease Detection" loading="lazy">
+                            </picture>
+                            <h3>Plant Disease Recognition</h3>
+                            <p>CNN-based AI/ML system for crop health.</p>
+                            
+                        </article>
+                        <article class="project-card" data-project="agentic">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="./src/images/agentic-mobile.webp">
+                                <img src="./src/images/agenticrag.png" alt="Agentic RAG ChatBOT" loading="lazy">
+                            </picture>
+                            <h3>Agentic RAG ChatBOT</h3>
+                            <p>AI chatbot with PDF/web synthesis.</p>
+                        </article>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Timeline Section with <time> -->
+        <section id="timeline" class="page-section" data-page="timeline">
+            <article class="timeline-content">
+                <div class="timeline-box">
+                    <h2>Timeline</h2>
+                    <ol class="timeline-list" role="list">
+                        <li class="timeline-item">
+                            <time datetime="2021-08">August 2021 - May 2025</time>
+                            <h3>Vellore Institute of Technology</h3>
+                            <p>B.Tech in Information Technology, CGPA: 8.81</p>
+                        </li>
+                        <li class="timeline-item">
+                            <time datetime="2019-04-01">April 2019 - April 2021</time>
+                            <h3>Narayana Junior College</h3>
+                            <p>Intermediate in MPC, Score: 91.6%</p>
+                        </li>
+                        <li class="timeline-item">
+                            <time datetime="2018">2018 - 2019</time>
+                            <h3>Viswabharathi High School</h3>
+                            <p>SSC, GPA: 10</p>
+                        </li>
+                        <li class="timeline-item">
+                            <time datetime="2023-08-01">August 2023 - October 2023</time>
+                            <h3>OROM CORP</h3>
+                            <p>App Developer Intern</p>
+                        </li>
+                        <li class="timeline-item">
+                            <time datetime="2025-08-04">August 2025 - Present></time>
+                            <h3>ENCORA INC</h3>
+                            <p>Software Developer Intern</p>
+                        </li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+
+        <!-- Contact Section with Modern Form -->
+        <section id="contact" class="page-section" data-page="contact">
+            <article class="contact-content">
+                <div class="contact-box">
+                    <h2>Contact Me</h2>
+                    <form class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required pattern="[A-Za-z\s]{2,}" data-form-input>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required data-form-input>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Phone</label>
+                            <input type="tel" id="tel" name="tel" placeholder="+91 9988556362" pattern="[+]?[0-9\s\-\(\)]{10,}" data-form-input>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date" required data-form-input>
+                        </div>
+                        <div class="form-group">
+                            <label for="priority">Priority</label>
+                            <input type="range" id="priority" name="priority" min="1" max="5" value="3" data-form-input>
+                            <span id="priority-value">3</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="theme">Favorite Color</label>
+                            <input type="color" id="theme" name="theme" value="#ff6b6b" data-form-input>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" required rows="5" data-form-input></textarea>
+                        </div>
+                        <button type="submit" class="form-submit" data-form-btn>Send Message</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+
+        <!-- FAQ Section with <details> and <summary> -->
+        <section id="faq" class="page-section" data-page="faq">
+            <article class="faq-content">
+                <div class="faq-box">
+                    <h2>FAQ</h2>
+                    <dl class="faq-list">
+                        <dt><details>
+                            <summary>What technologies do you specialize in?</summary>
+                            <dd>I specialize in MERN stack, Python, Java, and AI/ML tools like TensorFlow.</dd>
+                        </details></dt>
+                        <dt><details>
+                            <summary>Are you available for freelance work?</summary>
+                            <dd>Yes, I'm open to freelance opportunities in web and app development.</dd>
+                        </details></dt>
+                        <dt><details>
+                            <summary>How can I view your projects?</summary>
+                            <dd>Click on the Projects section for live demos and GitHub links.</dd>
+                        </details></dt>
+                        <!-- Add more as needed -->
+                    </dl>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Modal with <dialog> -->
+    <dialog class="modal" id="project-modal" data-modal>
+        <div class="modal-content">
+            <button class="modal-close" data-close-modal>&times;</button>
+            <div class="modal-body" data-modal-body>
+                <!-- Dynamic content loaded via JS -->
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed By Bhaswanth</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
