@@ -1,5 +1,5 @@
 :root {
-    /* CSS Variables */
+    /* This are the values used across the website*/
     --primary-gradient: linear-gradient(135deg, #000000 0%,     #0077a7 100%);
     --secondary-gradient: linear-gradient(135deg, #053baf 0%, #080074 100%);
     --glass-bg: rgba(255, 255, 255, 0.1);
@@ -152,7 +152,7 @@ header {
 
 .fade-in {
     animation: fadeIn 2s ease-in forwards;
-    opacity: 1; /* Ensure it starts visible */
+    opacity: 1; 
 }
 
 
@@ -653,7 +653,7 @@ footer {
 
 .fade-in { 
     animation: fadeIn 2s ease-in forwards; 
-    opacity: 0; /* Start from 0, animate to 1 */
+    opacity: 0; 
 }
 
 .fade-in-delay { 
@@ -667,7 +667,6 @@ footer {
 
 /* Responsive Media Queries */
 @media (max-width: 1024px) {
-    /* Tablet */
     .hero-box,
     .about-box {
         grid-template-columns: 1fr;
@@ -698,7 +697,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* Mobile */
+    
     .burger-menu {
         display: flex;
     }
@@ -708,14 +707,14 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(0, 0, 0, 0.9); /* Solid dark background for better contrast */
+        background: rgba(0, 0, 0, 0.9); 
         flex-direction: column;
         padding: 2rem;
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
         transition: var(--transition);
-        backdrop-filter: none; /* Remove glass effect */
+        backdrop-filter: none;
     }
 
     .nav-list.active {
@@ -761,7 +760,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-    /* Small Mobile */
+    
     :root {
         --spacing: 1rem;
     }
