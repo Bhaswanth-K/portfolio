@@ -1,6 +1,5 @@
-// app.js - Interactivity and SPA Logic
 document.addEventListener('DOMContentLoaded', () => {
-    // SPA Navigation
+    // Single page application navigation
     const navLinks = document.querySelectorAll('[data-nav-link]');
     const pageSections = document.querySelectorAll('.page-section');
 
@@ -24,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const href = link.getAttribute('href') || `#${link.textContent.trim().toLowerCase()}`;
             showSection(href);
-            // Handle burger close on mobile
+            // Logic for burger menu
             if (window.innerWidth <= 768) {
                 document.getElementById('nav-list').classList.remove('active');
                 document.querySelector('[data-burger-toggle]').ariaExpanded = 'false';
@@ -33,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Initial load
+    // Initial load with hero section
     const initialHash = window.location.hash || '#hero';
     showSection(initialHash);
 
@@ -73,34 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('[data-modal-body]').innerHTML = '';
     });
 
-    function loadProjectModal(projectId) {
-        const projects = {
-            medibook: '<h3>MediBook</h3><p>Full-stack MERN app for doctor bookings. Live: <a href="https://medibookonline.azurewebsites.net/">Demo</a></p>',
-            plant: '<h3>Plant Disease Recognition</h3><p>CNN-based ML model. Live: <a href="https://plantdiseasedetectioncnn.streamlit.app/">Demo</a></p>',
-            agentic: '<h3>Agentic RAG ChatBOT</h3><p>AI chatbot with RAG. Live: <a href="https://finbotchat.streamlit.app/">Demo</a></p>'
-        };
-        document.querySelector('[data-modal-body]').innerHTML = projects[projectId] || '<p>Project details loading...</p>';
-    }
+    
 
-    // Form Handling
-    const form = document.querySelector('.contact-form');
-    const formInputs = document.querySelectorAll('[data-form-input]');
-    const formBtn = document.querySelector('[data-form-btn]');
-
-    formInputs.forEach(input => {
-        input.addEventListener('input', () => {
-            formBtn.disabled = !form.checkValidity();
-        });
-    });
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        if (form.checkValidity()) {
-            alert('Form submitted! (In production, integrate with EmailJS or backend)');
-            form.reset();
-            formBtn.disabled = true;
-        }
-    });
 
     // Range slider value update
     const priorityRange = document.getElementById('priority');
@@ -111,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Skills animation on scroll (simple intersection observer)
+    // Skills animation on scroll 
     const skillsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
