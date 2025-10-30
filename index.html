@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header with Semantic Elements -->
     <header>
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="nav-container">
@@ -29,7 +28,6 @@
         </nav>
     </header>
 
-    <!-- Main Content with Semantic Structure -->
     <main class="main-content">
         <!-- Hero Section -->
         <section id="hero" class="page-section active" data-page="hero">
@@ -45,7 +43,7 @@
                         <picture>
                             <source media="(max-width: 768px)" srcset="./src/images/bbk.jpg">
                             <source media="(min-width: 769px)" srcset="./src/images/bbk.jpg">
-                            <img src="./src/images/bbk.jpg" alt="Bhaswanth Kumar Bonthala's professional photo" loading="lazy">
+                            <img src="./src/images/bbk.jpg" alt="Bhaswanth Kumar Bonthala's photo" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -69,7 +67,7 @@
                         <div class="contact-details">
                             <h3>Contact Details</h3>
                             <ul class="contacts-list" role="list">
-                                <li>
+                                <li>    
                                     <strong>Email:</strong>
                                     <a href="mailto:bhaswanth67@gmail.com">bhaswanth67@gmail.com</a>
                                 </li>
@@ -101,7 +99,7 @@
             </article>
         </section>
 
-        <!-- Skills Section with Dashboard Layout -->
+        <!-- Skills Section -->
         <section id="skills" class="page-section" data-page="skills">
             <article class="skills-content">
                 <div class="skills-dashboard">
@@ -114,25 +112,12 @@
                         <div class="skill-card programming-card">
                             <h3>Programming Languages</h3>
                             <div class="skill-items">
-                                <div class="skill-item">
-                                    <span class="skill-label">C</span>
-                                    <div class="progress-container">
-                                        <progress value="70" max="100"></progress>
-                                        <span class="skill-value">70%</span>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <span class="skill-label">C++</span>
-                                    <div class="progress-container">
-                                        <progress value="50" max="100"></progress>
-                                        <span class="skill-value">50%</span>
-                                    </div>
-                                </div>
+                                
                                 <div class="skill-item">
                                     <span class="skill-label">Java</span>
                                     <div class="progress-container">
                                         <progress value="65" max="100"></progress>
-                                        <span class="skill-value">65%</span>
+                                        <span class="skill-value">75%</span>
                                     </div>
                                 </div>
                                 <div class="skill-item">
@@ -143,17 +128,17 @@
                                     </div>
                                 </div>
                                 <div class="skill-item">
-                                    <span class="skill-label">HTML</span>
-                                    <div class="progress-container">
-                                        <progress value="90" max="100"></progress>
-                                        <span class="skill-value">90%</span>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
                                     <span class="skill-label">SQL</span>
                                     <div class="progress-container">
                                         <progress value="75" max="100"></progress>
-                                        <span class="skill-value">75%</span>
+                                        <span class="skill-value">67%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-label">Spring Boot</span>
+                                    <div class="progress-container">
+                                        <progress value="70" max="100"></progress>
+                                        <span class="skill-value">70%</span>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +158,7 @@
                                     <span class="skill-label">Hindi</span>
                                     <div class="progress-container">
                                         <progress value="90" max="100"></progress>
-                                        <span class="skill-value">90%</span>
+                                        <span class="skill-value">80%</span>
                                     </div>
                                 </div>
                                 <div class="skill-item">
@@ -190,7 +175,7 @@
             </article>
         </section>
 
-        <!-- Projects Section with Grid and Hover -->
+        <!-- Projects Section-->
         <section id="projects" class="page-section" data-page="projects">
             <article class="projects-content">
                 <div class="projects-box">
@@ -227,12 +212,17 @@
             </article>
         </section>
 
-        <!-- Timeline Section with <time> -->
+        <!-- Timeline Section -->
         <section id="timeline" class="page-section" data-page="timeline">
             <article class="timeline-content">
                 <div class="timeline-box">
                     <h2>Timeline</h2>
                     <ol class="timeline-list" role="list">
+                        <li class="timeline-item">
+                            <time datetime="2025-08-04">August 2025 - Present</time>
+                            <h3>ENCORA INC</h3>
+                            <p>Software Consultant</p>
+                        </li>
                         <li class="timeline-item">
                             <time datetime="2021-08">August 2021 - May 2025</time>
                             <h3>Vellore Institute of Technology</h3>
@@ -248,22 +238,13 @@
                             <h3>Viswabharathi High School</h3>
                             <p>SSC, GPA: 10</p>
                         </li>
-                        <li class="timeline-item">
-                            <time datetime="2023-08-01">August 2023 - October 2023</time>
-                            <h3>OROM CORP</h3>
-                            <p>App Developer Intern</p>
-                        </li>
-                        <li class="timeline-item">
-                            <time datetime="2025-08-04">August 2025 - Present></time>
-                            <h3>ENCORA INC</h3>
-                            <p>Software Developer Intern</p>
-                        </li>
+                        
                     </ol>
                 </div>
             </article>
         </section>
 
-        <!-- Contact Section with Modern Form -->
+        <!-- Contact Section -->
         <section id="contact" class="page-section" data-page="contact">
             <article class="contact-content">
                 <div class="contact-box">
@@ -304,7 +285,7 @@
             </article>
         </section>
 
-        <!-- FAQ Section with <details> and <summary> -->
+        <!-- FAQ Section -->
         <section id="faq" class="page-section" data-page="faq">
             <article class="faq-content">
                 <div class="faq-box">
@@ -322,7 +303,7 @@
                             <summary>How can I view your projects?</summary>
                             <dd>Click on the Projects section for live demos and GitHub links.</dd>
                         </details></dt>
-                        <!-- Add more as needed -->
+                    
                     </dl>
                 </div>
             </article>
@@ -334,7 +315,7 @@
         <div class="modal-content">
             <button class="modal-close" data-close-modal>&times;</button>
             <div class="modal-body" data-modal-body>
-                <!-- Dynamic content loaded via JS -->
+                
             </div>
         </div>
     </dialog>
